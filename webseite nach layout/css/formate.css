@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav {
+    display: flex;
+    font-family:"Madimi One", sans-serif;
+}
+
+header {
+  padding: 10px 20px;
+  justify-content: center;  
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+    background: url("../img/vogel_logo.png") no-repeat left top white;
+    background-size: contain;
+    padding: 16px 0 16px 65px;
+}
+
+nav menu {
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border-radius: 3px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 4px 2px
+}
+
+main {
+    background-image: url("../img/buero.jpg");
+    background-repeat: no-repeat;
+    background-color: #efefef;
+    background-position: center;
+    background-size: 100%;
+    height: 600px;
+}
+
+.headline {
+    font-family: "Playpen Sans", cursive;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-2 button {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #48C9B0;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+.button-3 button {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+.box {
+    background-color: lightgrey;
+    height: auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    margin-right: 8em;
+    margin-left: 8em;
+    padding-top: 1.5em;
+}
+
+.columns b {
+    font-family:"Madimi One", sans-serif;
+}
+
+.columns p {
+    font-family: "Krub", sans-serif;
+    font-weight: 200;
+}
+
+.column-1 {
+    flex-basis: 22%;
+    padding: 1em;
+}
+
+.column-2 {
+    flex-basis: 15%;
+    color: #138D75;
+    padding: 1em;
+}
+
+.column-2 p {
+    text-shadow: 0 0 3px white;
+}
+
+.column-3 {
+    flex-basis: 20%;
+    padding: 1em;
+}
+
+.column-4 {
+    flex-basis:22%;
+    padding: 1em;
+}
+
+.social-media a {
+    color: #48C9B0;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+}
+
+@media  screen and (min-width: 375px) {
+    /* For mobile and tablets */
+   .columns { 
+    display: inline;
+    }
+    header, nav {
+    display: grid;
+    }
+    nav li {
+    display: block;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    /* For bigger tablets */
+   .columns { 
+    display: block;
+    }
+    header, nav {
+    display: flex;
+    }
+    nav li {
+    display: inline;
+    }
+}
+
+@media  screen and (min-width: 1920px) {
+    /* For desktop */
+   .columns {
+    display: flex;
+   }
+}
